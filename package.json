@@ -1,0 +1,46 @@
+{
+  "name": "clickorm",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc --build && nodemon src/index.ts",
+    "build": "tsc --build",
+    "format": "prettier --write --end-of-line auto \"./src/**/*.ts\" \"./test/**/*.ts\""
+  },
+  "author": {
+    "name": "Kirill Shcherbakov",
+    "email": "shcherbakovkirill2@gmail.com"
+  },
+  "engines": {
+    "node": ">=16.13.0"
+  },
+  "bin": {
+    "clickorm": "./dist/bin/cli.js"
+  },
+  "keywords": [
+    "clickhouse",
+    "orm",
+    "clickhouse orm",
+    "clickhouse-orm"
+  ],
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.10.3",
+    "@types/yargs": "^17.0.33",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@depyronick/clickhouse-client": "^2.0.4",
+    "axios": "^1.7.9",
+    "chalk": "4.1.2",
+    "clickhouse": "^2.6.0",
+    "glob": "^11.0.0",
+    "reflect-metadata": "^0.2.2",
+    "yargs": "^17.7.2"
+  }
+}
