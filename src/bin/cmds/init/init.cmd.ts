@@ -153,7 +153,7 @@ export class InitCmd implements yargs.CommandModule {
 
   protected static getJsTemplate(opt: Partial<DataSource['opt']>) {
     return `
-const { DataSource } = require('clickorm')   
+const { DataSource } = require('clickorm-clickhouse')   
 
 const dataSource = DataSource.init(${JSON.stringify(opt)})
 
@@ -163,7 +163,7 @@ module.exports = { dataSource }
 
   protected static getTsTemplate(opt: Partial<DataSource['opt']>) {
     return `
-import { DataSource } from 'clickorm' 
+import { DataSource } from 'clickorm-clickhouse' 
     
 export const dataSource = DataSource.init(${JSON.stringify(opt)})    
 `

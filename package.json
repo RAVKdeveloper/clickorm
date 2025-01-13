@@ -1,12 +1,15 @@
 {
-  "name": "clickorm",
-  "version": "1.0.0",
-  "private": true,
+  "name": "clickorm-clickhouse",
+  "version": "0.1.0",
   "main": "index.js",
+  "private": false,
   "scripts": {
     "dev": "tsc --build && nodemon src/index.ts",
     "build": "tsc --build",
     "format": "prettier --write --end-of-line auto \"./src/**/*.ts\" \"./test/**/*.ts\""
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "author": {
     "name": "Kirill Shcherbakov",
@@ -22,11 +25,16 @@
     "clickhouse",
     "orm",
     "clickhouse orm",
-    "clickhouse-orm"
+    "clickhouse-orm",
+    "clickorm",
+    "click-orm",
+    "clickorm-clickhouse",
+    "clickormclickhouse"
   ],
-  "license": "MIT",
+  "license": "ISC",
+  "homepage": "https://github.com/RAVKdeveloper/clickorm/blob/main/README.md",
   "readmeFilename": "README.md",
-  "description": "",
+  "description": "Clickhouse orm",
   "devDependencies": {
     "@types/node": "^22.10.3",
     "@types/yargs": "^17.0.33",

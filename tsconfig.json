@@ -23,6 +23,6 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": false
   },
-  "include": ["src", "*.ts"],
+  "include": ["src", "*.ts", "sample"],
   "exclude": ["build", "node_modules", "temp", "tmp"]
 }

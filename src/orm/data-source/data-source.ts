@@ -116,9 +116,14 @@ export class DataSource {
   }
 
   private async loadEntities() {
+    const optPath = this.opt.entities.filter(
+      (e) => typeof e === 'string'
+    ) as string[]
+
+    if (optPath.length === 0) return
+
     const pathArr =
-      this.opt.entities ??
-      [DEFAULT_ENTITIES_PATH].map((p) => path.join(process.cwd(), p))
+      optPath ?? [DEFAULT_ENTITIES_PATH].map((p) => path.join(process.cwd(), p))
     await importClassesFromDirectories(pathArr)
   }
 
