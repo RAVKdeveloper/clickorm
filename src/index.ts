@@ -8,3 +8,8 @@ export {
   CreatedDateColumn
 } from './orm/decorators'
 export { QueryBuilder } from './orm/query-builder'
+
+// Types
+
+export { DataSourceOpt } from './orm/data-source/data-source.type'
+export { EntityTarget } from './orm/types/common.type'
